@@ -1,7 +1,7 @@
 {
 	"editor.hover.delay": 1500,
 	"editor.mouseWheelZoom": true,
-	"workbench.editor.closeEmptyGroups": false,
+	"workbench.editor.closeEmptyGroups": true,
 	"editor.formatOnSave": true,
 	"files.autoSave": "onFocusChange"
 }
