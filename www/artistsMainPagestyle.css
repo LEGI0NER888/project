@@ -1,6 +1,6 @@
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); 
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
    
     gap: 2vw; 
 	width: 90vw;
@@ -8,14 +8,13 @@
 }
 
 .artist-block{
+	
 	border: 2px solid rgb(224, 224, 224);
 	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
 	white-space: nowrap;
-	background-color: black;
-	background: rgb(162,150,39);
-	background: linear-gradient(90deg, rgba(162,150,39,1) 7%, rgba(2,0,36,0.9472163865546218) 20%);
+	background-color: rgba(17, 2, 16, 0.952);
 	transition: 0.5s transform ease-out;
 }
 

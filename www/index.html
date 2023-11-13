@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="eventsMainPagestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -23,38 +24,87 @@
                 <p><a href="index.html">MOONBOOK</a></p>
             </div>
             <nav class="header__nav">
-                <div class="header__nav-item"><a href="">Выступления</a></div>
-                <div class="header__nav-item"><a href="">Артисты</a></div>
+                <div class="header__nav-item"><a href="eventsMain.html">Выступления</a></div>
+                <div class="header__nav-item"><a href="artistsMain.html">Артисты</a></div>
                 <div class="header__nav-item"><a href="">О нас</a></div>
             </nav>
-            <button href="" class="header__buy-button">Купить <br>билеты</button>
-            <button ><img src="../img/icons/menu.svg" class="header__menu-burger" alt="Menu burger"></button>
-               <div class="auth-block">
-                <p> Для бронирования билета необходимо войти в аккаунт: </p>
-                <form class="auth-block__form" action="#" method="post">
-                    <label for="login">Логин</label>
-                    <input name="login" id="login" type="text">
-                    <label for="password">Пароль</label>
-                    <input name="password" id="password" type="password">
-                    <button type="submit">Войти</button>
-                </form>
-                <button id="registration-button">Зарегистрироваться</button>
-            </div>
+            <button  class="btn-pop header__buy-button">Купить <br>билеты</button>
+
+        <div class="popup__bg">
+            <div class="auth-block">
+                    <p> Для бронирования билета необходимо войти в аккаунт: </p>
+                    <form class="auth-block__form" action="#" method="post">
+                        <label for="login" >Логин</label>
+                        <input name="login" id="login" class="input" type="text">
+                        <label for="password">Пароль</label>
+                        <input name="password" id="password" class="input" type="password">
+                        <button type="submit" id="submit">Войти</button>
+                    </form>
+                    <button id="registration-button">Зарегистрироваться</button>      
+                   </div>
+        </div>
+
+           
+       
+       
+       <button id="burger"><img src="../img/icons/menu.svg" class="header__menu-burger" alt="Menu burger"></button>
+       <nav class="menu" id="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Выступления
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Артисты
+                </a>
+            </li>
+            <li  class="menu__item">
+                <a class="menu__link" href="#about-us">
+                    О нас
+                </a>
+            </li>
+            <li class="btn-pop menu__item">
+                <a class="menu__link" href="#">
+                    Купить билеты
+                </a>
+            </li>
+        </ul>
+    </nav>
             
         </div>
     </header>
 
     <main class="main">
         <section class="section main__upcoming-events">
-             Слайдер с предстоящими выступлениями 
+            
+                <div class="slider">
+                   
+                        <img class="slider-img" src="../img/events/event1.jpg" alt="Изображение 1">
+                       
+                    
+                   
+                        <img class="slider-img" src="../img/events/event2.jpg" alt="Изображение 2">
+                       
+                    
+                    
+                        <img class="slider-img" src="../img/events/event3.jpg" alt="Изображение 3">
+                       
+                        <button class="prev-button controls" aria-label="Посмотреть предыдущий слайд">&lt</button>
+                        <button class="next-button controls" aria-label="Посмотреть следующий слайд">&gt</button>
+                </div>
+            
+            
         </section>
+        
         <section class="section main__event-locations">
             Карта с местами выступлений 
         </section>
         <section class="section main__event-gallery">
              Слайдер с галереей выступлений 
         </section>
-        <section class="section main__about-us">
+        <section id="about-us" class="section main__about-us">
             <div>
                 <h2 class="about-us__title title">
                     О нас
@@ -114,5 +164,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
